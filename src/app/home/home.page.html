@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title id = "idTitle">
+      NAMES JACKPOT
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+   <ion-item class="ion-padding">
+     <ion-label position="floating">Lista separada por comas (,)</ion-label>
+     <ion-textarea [(ngModel)] = "txtInput" rows = "10"></ion-textarea>
+   </ion-item>
+  <div>
+    <ion-button expand="block" color="medium" (click) = "start()">Play</ion-button>
+  </div>
+
+  <ion-item text-center>
+      <ion-label id = "idResult">{{theOne}}</ion-label>
+  </ion-item>
+</ion-content>
