@@ -1,21 +1,31 @@
-<ion-header>
+<ion-header class = "font">
   <ion-toolbar>
-    <ion-title id = "idTitle">
-      NAMES JACKPOT
+    <ion-title class = "idTitle">
+      <b>NAMES JACKPOT</b>
     </ion-title>
+
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-   <ion-item class="ion-padding">
-     <ion-label position="floating">Lista separada por comas (,)</ion-label>
-     <ion-textarea [(ngModel)] = "txtInput" rows = "10"></ion-textarea>
-   </ion-item>
-  <div>
-    <ion-button expand="block" color="medium" (click) = "start()">Play</ion-button>
-  </div>
 
-  <ion-item text-center>
-      <ion-label id = "idResult">{{theOne}}</ion-label>
+<ion-content class = "font">
+  
+   <ion-card class = "cardClass">
+     <ion-textarea
+     [(ngModel)] = "txtInput" 
+     rows = "5"
+     placeholder = "Lista separada por comas (,)"></ion-textarea>
+    </ion-card>
+    
+    <div class = "blockclass">
+      <ion-button id="idButton" expand="block" color = "primary" (click) = "start()"><b>Play</b></ion-button>
+    </div>
+
+  <ion-item id = "iditem" lines = "none">
+      <ion-label class = "idResult">{{theOne}}</ion-label>
   </ion-item>
 </ion-content>
+<ion-label class ="names">
+    Fernanda Moreno<br>Andrés Osorio
+  </ion-label>
+

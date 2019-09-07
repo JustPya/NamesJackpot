@@ -1,13 +1,59 @@
-#idItem{
-    padding: 10%;
-}
-#idTitle{
-    text-align: center;
-    font-family: Gill Sans;
+ion-content{
+    --ion-background-color: white;
 }
 
-#idResult{
+ion-header{
+    --ion-background-color: var(--ion-color-primary);
+}
+
+.names{
+    margin-bottom: 1%;
+    color: #B2B2B1;
+    text-align: right;
+}
+
+.font{
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.idTitle{
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 100pt;
+    color: white;
+}
+
+.idResult{
+    text-align: center;
+    font-size: 80px;
+    height: 80pt;
+}
+
+.cardClass{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    height: 30%;
+}
+
+.blockclass{
+    height: 10%;
+    margin-bottom: 10%; 
+    margin-left: 10%;
+    margin-right: 10%;
+    color: #EA5A3A;
+}
+
+#idButton{
+    height: 100%;
+    font-size: 30px;
+}
+
+.ion-item{
+    margin-top: 10%;
+}
+
+#iditem{
+    border: 1px solid #B2B2B1;
+    border-radius: 15px;
+    margin-left: 2%;
+    margin-right: 2%;
+    height: 35%;
 }
